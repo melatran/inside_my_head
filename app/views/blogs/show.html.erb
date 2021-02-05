@@ -1,7 +1,8 @@
  <div class="wrapper">
     <div class="title">
-    <svg height="100" stroke="black" stroke-width="2" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%"><%= @blog.title %></text></svg>
+      <svg height="100" stroke="black" stroke-width="2" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%"><%= @blog.title %></text></svg>
     </div>
+    <center><button><%= link_to 'Edit', "/blogs/#{@blog.id}/edit" %></button></center>
     <center><img class="blog-image" src="<%= @blog.image %>"></center>
     <div class="blog-body">
       <p><%= @blog.body %></p>

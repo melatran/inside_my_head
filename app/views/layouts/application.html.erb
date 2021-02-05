@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>InsideMyHead</title>
+    <title>Inside My Head</title>
+    <%= favicon_link_tag asset_path('brain.png')%>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
 
   <body>
+    <ul>
+      <li><a class="active" href="/">Home</a></li>
+      <li><a href="/dear_no_one">Letter to No One</a></li>
+      <li><a href="/blogs">Blog and Community</a></li>
+      <li><a href="/about">About Me</a></li>
+      <li class="login"><a href="#Login">Login</a></li>
+    </ul>
+
+    <% flash.each do |type, message| %>
+      <%= message%>
+    <% end %>
     <%= yield %>
   </body>
 </html>

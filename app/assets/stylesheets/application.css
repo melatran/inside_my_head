@@ -237,6 +237,7 @@
   flex-direction: column;
   margin: 20px auto;
 }
+
 .form-group{
   display: flex;
   justify-content: space-between;
@@ -245,12 +246,37 @@
 }
 
 input[type="submit"]{
-  background-color: #333333;
-  border: none;
-  color: white;
-  padding: 10px 32px;
+ border-radius:20px;
+  font-family: "Gill Sans", Gadget, sans-serif;
+  font-size: 20px;
+  background-color: #F08080;
+  color: #333;
   text-align: center;
+  padding: 5px;
+}
+
+button {
+  border-radius:20px;
+  font-family: "Gill Sans", Gadget, sans-serif;
+  font-size: 20px;
+  background-color: #F08080;
+  color: #f6f2ef;
+  text-align: center;
+  padding: 5px;
+}
+
+button a{
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+}
+
+button a:link{
+  color: #333;
+}
+
+button a:visited{
+  color: #333;
+}
+
+button a:hover{
+  color: white;
 }

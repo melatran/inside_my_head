@@ -8,7 +8,7 @@
       <div class="blog-card">
         <img class="image" src="<%= blog.image %>">
         <div class="blog-title">
-          <h2><%= blog.title %></h2>
+          <h2><%= link_to "#{blog.title}", "/blogs/#{blog.id}"%></h2>
         </div>
         <div class="body-trunc">
           <p><%= blog.body %></p>

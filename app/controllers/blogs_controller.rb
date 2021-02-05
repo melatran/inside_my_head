@@ -31,6 +31,13 @@ class BlogsController < ApplicationController
     redirect_to "/blogs/#{blog.id}"
   end
 
+  def destroy
+    blog = Blog.find(params[:id])
+    Blog.destroy(params[:id])
+    flash[:notice] = "You have removed #{blog.title}"
+    redirect_to blogs_path
+  end
+
   private
 
   def blog_params

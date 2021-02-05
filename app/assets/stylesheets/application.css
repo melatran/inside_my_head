@@ -280,3 +280,26 @@ button a:visited{
 button a:hover{
   color: white;
 }
+
+.dear {
+  margin: 30px auto;
+  width: 600px;
+  border: 5px solid #222;
+  background: #fff;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+h5 {
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 15px;
+  font-family: "Gill Sans", Gadget, sans-serif;
+}
+
+.about {
+  padding-top: 50px;
+  padding-left: 250px;
+  padding-right: 250px;
+}

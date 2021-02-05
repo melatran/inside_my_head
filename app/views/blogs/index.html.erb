@@ -1,0 +1,19 @@
+ <div class="wrapper">
+    <div class="title">
+    <svg height="100" stroke="black" stroke-width="2" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">Blog & Community</text></svg>
+    </div>
+
+  <div class="posts" id="post_section">
+    <% @blogs.each do |blog| %>
+      <div class="blog-card">
+        <img class="image" src="<%= blog.image %>">
+        <div class="blog-title">
+          <h2><%= blog.title %></h2>
+        </div>
+        <div class="body-trunc">
+          <p><%= blog.body %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

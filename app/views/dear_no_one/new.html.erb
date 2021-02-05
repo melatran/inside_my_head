@@ -1,0 +1,24 @@
+<div class="title">
+  <svg height="100" stroke="black" stroke-width="2" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">Dear No One,</text></svg>
+</div>
+<h5>There are plenty of moments where you want to vent or send a letter to someone without the intention of them ever reading it. This is the place to send those letters that get lost in the internet world and are never ever read. Feel free to release your anger, sadness, or secret love. Only the internet and you know the contents of these letters.</h5>
+<div class= "dear">
+<section class="post-form">
+  <%= form_tag "/dear_no_one" do %>
+    <div class="form-group">
+    <%= label_tag :to %>
+    <%= text_field_tag :to %><br/>
+    </div>
+    <div class="form-group">
+      <%= label_tag :from %>
+      <%= text_field_tag :from %><br/>
+    </div>
+    <div class="form-group">
+      <%= label_tag :letter %>
+      <%= text_area_tag :letter %><br/>
+    </div>
+    <br>
+    <p><%= submit_tag 'Send to No One' %></p>
+  <% end %>
+</section>
+</div>

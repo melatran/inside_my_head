@@ -8,6 +8,7 @@ class BlogsController < ApplicationController
   end
 
   def new
+    redirect_to dear_no_one_path
   end
 
   def create

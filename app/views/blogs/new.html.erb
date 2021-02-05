@@ -1,0 +1,25 @@
+<div class="title">
+  <svg height="100" stroke="black" stroke-width="2" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">Blog Creator</text></svg>
+</div>
+
+<div style="text-align:center">
+  <h4>Fill and submit the form below to create a new post</h4>
+    <form method="POST" action="/blogs/" enctype="multipart/form-data" class="post-form">
+      <%= token_tag %>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" name="title" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="media">Image</label>
+          <input type="text" name="image" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="body">Body</label>
+           <textarea name="body" class="form-control" cols="30" rows="10"></textarea>
+        </div>
+        <div class="from-group">
+          <div><input type="submit" value="Create Post"></div>
+        </div>
+    </form>
+</div>

@@ -11,7 +11,7 @@ describe "Blog Show Page" do
     visit blogs_path
     click_on "Being a Dog Momo"
     expect(current_path).to eq("/blogs/#{blog1.id}")
-    expect(current_page).to have_content(blog1.title)
-    expect(current_page).to have_content(blog1.body)
+    expect(page).to have_content(blog1.title)
+    expect(page).to have_content(blog1.body)
   end
 end

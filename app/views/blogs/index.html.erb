@@ -2,7 +2,7 @@
     <div class="title">
     <svg height="100" stroke="black" stroke-width="2" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">Blog & Community</text></svg>
     </div>
-
+  <button><%= link_to 'New Blog Post', "/blogs/new" %></button>
   <div class="posts" id="post_section">
     <% @blogs.each do |blog| %>
       <div class="blog-card">

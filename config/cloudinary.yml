@@ -1,0 +1,18 @@
+development:
+  cloud_name: dvmnqnba9
+  api_key: '365148573242445'
+  api_secret: Vo8efODrwcBffL6IwbGSWUDm5Ss
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dvmnqnba9
+  api_key: '365148573242445'
+  api_secret: Vo8efODrwcBffL6IwbGSWUDm5Ss
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dvmnqnba9
+  api_key: '365148573242445'
+  api_secret: Vo8efODrwcBffL6IwbGSWUDm5Ss
+  enhance_image_tag: true
+  static_file_support: false
